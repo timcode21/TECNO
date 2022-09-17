@@ -22,12 +22,11 @@
     margin: 0;
     padding: 0;
 }
-a{
+a {
     text-decoration: none;
 }
 
 body{
-    padding-bottom: 400px;
     font-family: Tecno-lite;
 }
 /* the header css */
@@ -177,9 +176,11 @@ header {
 .carousel-control-next > i,
 .carousel-control-prev > i{
     font-size: 40px;
-    color: gray;
+    color: black;
 }
-
+.tecno-page{
+    padding-bottom: 5%;
+}
 .top-banner{
     margin-bottom: 64px;
 }
@@ -242,6 +243,7 @@ header {
     display: flex;
     width: 100%;
     height: 28.5rem;
+    overflow: hidden;
 }
 
 .content-item-img{
@@ -249,26 +251,27 @@ header {
     width: 100%;
     height: 100%;
     z-index: 6;
+    /* overflow: hidden; */
 }
 /* .img-hover{
     /* transition: transform 500ms ease;animatiion time */
     /* z-index: 6;
 } */
 
-.content-item-img{
+/* .content-item-img{
     height:456px;
-}
+} */
 
 .content-img{
     transition: transform 0.5s ease-out;
 }
-.content-item:hover .img-hover{
+/* .content-item:hover .img-hover{
     overflow: hidden;
     transition: transform 0.5s ease-out;
     /* height:456px; */
     /* transform: scale(1.05); */
-    /* to create an image expand animation effect */
-}
+    /* to create an image expand animation effect
+} */
 
 .content-item:hover .content-img{ 
     width:456px;
@@ -312,7 +315,7 @@ header {
 }
 
 .down-up .top{
-    display: none;
+    /* display: none; */
     width: 100%;
     height: 100%;
     display: flex;
