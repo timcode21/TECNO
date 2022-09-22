@@ -8,22 +8,50 @@
     color: rgb(3, 10, 18);
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     /* padding-bottom: 80px; */
 }
 
 .video-news-container .video-box,
 .video-news-container .news-box{
-    /* width: calc(50% - 0.75*16px); */
-    width: 100%;
+    width: calc(50% - 0.75*16px);
+    /* width: 90%; */
     height: auto;
     background-color: #fff;
 }
-@media(min-width: 900px) {
+@media (max-width: 900px) {
+
+    /* .video-news-container{
+        display: flex;
+        justify-content: space-between;
+    }
     .video-news-container > .video-box,
     .video-news-container > .news-box{
         width: calc(50% - 0.75*16px);
+    } */
+    .video-news-container{
+        /* background-color: aqua; */
+        background-color: #fff;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-bottom: 4rem;
+        color: rgb(3, 10, 18);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.3rem;
+        justify-content: center;
+        align-items: center;
+        /* padding-bottom: 80px; */
+    }
+    
+    .video-news-container .video-box,
+    .video-news-container .news-box{
+        /* width: calc(50% - 0.75*16px); */
+        width: 90%;
+        height: auto;
+        background-color: #fff;
     }
 }
 .section-content{
@@ -167,7 +195,25 @@
     color: #030a12;
 }
 
-
+/* the 4th section */
+@media (max-width: 900px){
+    .Brand-lists{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.4rem;
+    }
+    .Brand-lists > .brand-item{
+        width: 90%;
+        margin-left: 0;
+    }
+    .brand-img{
+        width: 100%;
+        height: 100%;
+    }
+}
 .Brand-lists{
     display: flex;
     justify-content: space-between;
@@ -192,17 +238,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 11rem;
+    height: 21rem;
     overflow: hidden;
 }
-@media (min-width: 1000px){
-    .brand-img-item{
-        height: 21rem;
-    }
-    .brand-img{
-        object-fit: contain;
-    }
-}
+
 .brand-item-img{
     display: flex;
     width: 100%;
@@ -213,7 +252,7 @@
 
 .brand-img{
     transition: transform 0.5s ease-out;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
 .brand-item:hover .brand-img{
@@ -319,7 +358,33 @@
     margin-bottom: 4rem;
     padding: 0 3%;
 }
-
+@media (max-width: 770px){
+    .software{
+        margin-bottom: 0;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1.4rem;
+    }
+    .content > .software-content{
+        width: 90%;
+    }
+    .software-content > .software-img{
+        width: 100%;
+        height: 20rem;
+    }
+    .software-img > .software-item{
+        width: 100%;
+        height: 100%;
+    }
+    .footer-bottom-left > .footer-bottom-links{
+        margin-right: 0;
+    }
+}
 .software-content{
     width: calc(50% - 1rem);
     border-radius: 1rem;
@@ -374,24 +439,47 @@
     border-radius: 1.88rem;
 }
 
+@media (max-width: 900px){
+    .tecno-page{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.3rem;
+    }
+}
 
 /* footer */
 footer{
     padding: 0 3%;
     background-color: #f5f5f5;
 }
-
+@media (max-width: 900px){
+    .footer-top{
+        width: 90%;
+        margin-right: 0;
+    }
+    .footer-top-left{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        text-align: left;
+    }
+    .footer-top-left-items{
+        margin-right: 0;
+    }
+    .item-links{
+        display: none;
+    }
+}
 .footer-top{
     padding: 2.5rem 0;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .footer-top-left{
     width: 75%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer-top-left-items{
@@ -443,7 +531,6 @@ footer{
 .footer-bottom{
     padding: 1.25rem 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #e5e5e5;

@@ -1,39 +1,144 @@
-/*:root {
-    font-size: 12px; 0.75
+/*the general css */
+@font-face {
+    font-family: Tecno;
+    src: url(../font/OnlineWebFonts_COM_d175b47f404b03470fdf05b4afbbb462/HurmeGeometricSans3-Black/@font-face/c87370f887ef7a74c1b17a214d7ea29e.woff);
+}
+
+@font-face {
+    font-family: Tecno-lite;
+    src: url(../font/HurmeGeometricSans3-Regular.woff);
+}
+:root{
+    box-sizing: border-box;
+    font-size: 0.75em;
 }
 @media (min-width: 800px) {
     :root {
-    font-size: 14px; 0.875
+    font-size: 0.875em;
     }
 }
 @media (min-width: 1200px) {
     :root {
-    font-size: 16px; 1
+    font-size: 1em;
     }
-}*/
+}
 
-/* .down-up-box{
-    position: relative;
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family: Tecno-lite;
+}
+/* the header css */
+header {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.header-pc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+/* header-left */
+.header-left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 4rem;
+    height: 1.3rem;
+    cursor: pointer;
+    display: block;
+}
+
+.header-left-nav{
+    display: flex;
+    align-items: center;
+}
+
+.header-left-item{
+    margin-right: 2rem;
+}
+
+#nav-item{
+    /*display: inline-block;*/
+    color: rgb(68, 68, 68);
+    line-height: 4rem;
+    height: 4rem;
+    text-decoration: none;
+}
+#nav-item:hover{
+    color: #0164f9;
+}
+/* the header right */
+.header-right{
+    display: flex;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-right-item{
+    margin-right: 2rem;
+}
+.first-icon{
+    margin-right: 1rem;
+}
+
+/* the media query */
+@media (max-width: 899px){
+    .header-pc {
+        display: none;
+    }
+}
+@media (min-width: 900px){
+    .header-mobile {
+        display: none;
+    }
+}
+
+/* the mobile view */
+.header-mb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 4rem;
 }
 
-.down-up{
-    position: absolute;
-    height: 100%;
-
-    overflow: hidden;
-    
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: aqua;
-    
-} */
-
-
-/* the mobile hero */
-.hero-box-mobile{
-    display: none;
+.logo-mb{
+    display: block;
+    height: 1.3rem;
+    cursor: pointer;
 }
+
+.header-right-mb{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item-mb{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.3rem;
+    margin-left: 1rem;
+}
+
+
+
